@@ -1,6 +1,6 @@
 import numpy as np
 
-# Cai nay minh cau hinh theo de bai
+# De bai
 toc_do_hoc = 0.01        # alpha
 sai_so_cho_phep = 1e-3   # epsilon
 chay_toi_da = 1000       # so vong lap trong 1 lan chay
@@ -16,7 +16,7 @@ def tinh_ham_so(x):
 def tinh_dao_ham(x):
     return 2 * x + 20 * np.pi * np.sin(2 * np.pi * x)
 
-# Mang chua gia tri 20 lan doc lap 
+# Mang chua gia tri cuoi cung
 danh_sach_kq = []
 
 for lan in range(so_lan_thu):
@@ -45,7 +45,6 @@ for lan in range(so_lan_thu):
 # Tinh toan thong ke 
 mang_so = np.array(danh_sach_kq)
 
-print("\nKet qua thong ke")
 print(f"Nho nhat (Min): {np.min(mang_so):.4f}")
 print(f"Lon nhat (Max): {np.max(mang_so):.4f}")
 print(f"Trung binh (Mean): {np.mean(mang_so):.4f}")
